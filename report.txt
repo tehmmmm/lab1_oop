@@ -1,0 +1,5 @@
+Ali: 88 (Pass)
+Sara: 92 (Pass)
+Omar: 75 (Pass)
+Zain: 67 (Pass)
+Average: 80.5
