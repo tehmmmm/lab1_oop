@@ -44,6 +44,19 @@ def main():
     print(course.average())
     print(course.top_student())
 
+
+    c = Course("X"); c.add_student("Ali" , 88)
+    c.remove_student("Ali")
+    print(len(c))
+    try:
+        c.remove_student("Zara")
+    except KeyError as e:
+        print("KeyError:", e)
+
+    
+
+
+
     # Task 3: Custom exception and readable Course output
     print("\nTASK 3")
     try:
@@ -67,3 +80,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+

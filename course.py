@@ -44,6 +44,12 @@ class Course:
             f"average {self.average():.1f}"
         )
 
+    def remove_student(self,name: str)  ->None :
+        """Remove a student, or raise KeyError if missing."""
+        if name not in self.marks:
+            raise KeyError(f"No student named {name}")
+        del self.marks[name]
+
 
 def load_course(name: str, filename: str) -> Course:
     """Load valid student marks from a text file and skip invalid lines."""
